@@ -80,7 +80,7 @@ const projectConfig = {
   admin_cors: ADMIN_CORS,
   // Uncomment the following lines to enable REDIS
   redis_url: REDIS_URL,
-  port: 9000
+  database_extra: { ssl: { rejectUnauthorized: false } }
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
