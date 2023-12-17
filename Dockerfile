@@ -42,8 +42,6 @@ RUN npm i --only=production
 
 COPY --from=builder /app/medusa/dist ./dist
 
-EXPOSE 8080
-
 RUN ["chmod", "+x", "./develop.sh"]
 
 ENTRYPOINT ["./develop.sh", "start"]
