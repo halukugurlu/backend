@@ -33,8 +33,6 @@ const DATABASE_URL =
 
 const REDIS_URL = process.env.REDIS_URL || "redis://0.0.0.0:6379";
 
-const PORT = 9000;
-
 const plugins = [
   `medusa-fulfillment-manual`,
   `medusa-payment-manual`,
@@ -78,7 +76,6 @@ const projectConfig = {
   store_cors: STORE_CORS,
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
-  // Uncomment the following lines to enable REDIS
   redis_url: REDIS_URL,
   database_extra: { ssl: { rejectUnauthorized: false } }
 };
